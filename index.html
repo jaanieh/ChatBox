@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>#ChatSite</title>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase-messaging.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCKOPBxFFLOyWbrwdxAheSByhP9mtebiCw",
+    authDomain: "test1-46376.firebaseapp.com",
+    databaseURL: "https://test1-46376.firebaseio.com",
+    storageBucket: "test1-46376.appspot.com",
+    messagingSenderId: "157156242318"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt" rel="stylesheet">
+</head>
+<body>
+
+
+<img src="header.png" class="header">
+<div id="logOutDiv"><p id="loginText"></p><button id="logout">Log out</button></div>
+
+<div id="inlog">
+<p class="inlogText"><img src="login.png"/></p>
+<input type="text" id="inputName" placeholder="username"></input><br>
+<button id="login">Log In</button><br>
+</div>
+
+<div id="cover"></div>
+
+
+<div class="section">
+<div class="chatBox">
+<table id="showMessages"></table>
+</div>
+</div>
+
+<div class="section">
+<div class="messageBox">
+
+​<input type="text" id="inputMessage" placeholder="Write your message here"></input> <button id="send">.</button> 
+</div>
+</div>
+
+
+</body>
+</html>
