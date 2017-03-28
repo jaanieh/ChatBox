@@ -51,6 +51,9 @@ firebase.database().ref('messages/').on('value', function(snapshot){        // m
 
 					// ta reda på hur man lägger till objekten i tabellen i ordning??? 
 					
+					showMessages.insertBefore(tm, showMessages.childNodes[0]);
+					showMessages.insertBefore(tr, showMessages.childNodes[0]);
+					
 				}
 			});	
 
